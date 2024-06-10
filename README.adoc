@@ -49,7 +49,7 @@ endif::[]
 * First name : John
 * TD group : 
 - [ ] 1
-- [] 2
+- [ ] 2
 - [ ] 3
 - [x] 4
 
