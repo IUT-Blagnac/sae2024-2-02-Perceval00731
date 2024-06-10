@@ -49,9 +49,9 @@ endif::[]
 * First name : John
 * TD group : 
 - [ ] 1
-- [x] 2
+- [] 2
 - [ ] 3
-- [ ] 4
+- [x] 4
 
 // == Objectives
 == Objectifs
