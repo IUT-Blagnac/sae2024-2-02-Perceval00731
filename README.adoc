@@ -164,9 +164,16 @@ Vous utiliserez le dépôt initial qui vous aura été attribué via classroom p
 [options="header"]
 |==========================================================================
 | #    | lien                                                     | langage  | catégorie 
-| 1    | link:src/main/java/exercice/Exercice1.java[meilleur java]| Java     | Simplicité
-| 2    | link:src/main/java/exercice/Exercice2.java[meilleur C]    | C     | Efficacité
-| ...  | ...                                                      | ...      | ...      
+| 1    | link:src/main/java/simplicite.java[simplicite.java]| Java     | Simplicité
+| 2    | link:src/main/java/efficacite.java[efficacite.java]| Java     | Efficacité
+| 3    | link:src/main/java/sobriete.java[sobriete.java]| Java     | Sobriété
+| 4    | link:src/main/python/simplicite.py[simplicite.py]| Python     | Simplicité
+| 5    | link:src/main/python/efficacite.py[efficacite.py]| Python     | Efficacité
+| 6    | link:src/main/python/sobriete.py[sobriete.py]| Python     | Sobriété
+| 7    | link:src/main/c/simplicite.c[simplicite.c]| C     | Simplicité
+| 8    | link:src/main/c/efficacite.c[efficacite.c]| C     | Efficacité
+| 9    | link:src/main/c/sobriete.c[sobriete.c]| C     | Sobriété
+
 |==========================================================================
 
 === Phase 2 (deadline : **vendredi 21 juin 2024** à minuit)
