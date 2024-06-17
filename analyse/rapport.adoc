@@ -1,0 +1,53 @@
+= Rapport d'évaluation des Algorithmes
+
+== Liste des Algorithmes
+
+
+
+
+=== Simplicite
+
+
+|===
+| Fichier | Langage | Lien
+
+| 04simplicite.java | Java | link:../analyse/simplicite/04simplicite.java[Code]
+| 32simplicite.py | Python | link:../analyse/simplicite/32simplicite.py[Code]
+| 42simplicite.java | Java | link:../analyse/simplicite/42simplicite.java[Code]
+| 57simplicite.java | Java | link:../analyse/simplicite/57simplicite.java[Code]
+| 25simplicite.java | Java | link:../analyse/simplicite/25simplicite.java[Code]
+
+|===
+
+
+
+
+
+=== Efficacité
+
+|===
+| Fichier | Langage | Lien
+
+| 10efficacite.java | Java | link:../analyse/efficacite/10efficacite.java[Code]
+| 31efficacite.java | Java | link:../analyse/efficacite/31efficacite.java[Code]
+| 30efficacite.java | Java | link:../analyse/efficacite/30efficacite.java[Code]
+| 26efficacite.java | Java | link:../analyse/efficacite/26efficacite.java[Code]
+| 51efficacite.c | C | link:../analyse/efficacite/51efficacite.c[Code]
+
+|===
+
+
+
+
+
+=== Sobriété
+
+|===
+| Fichier | Langage | Lien
+
+| 54sobriete.java | Java | link:../analyse/sobriete/54sobriete.java[Code]
+| 51sobriete.java | Java | link:../analyse/sobriete/51sobriete.java[Code]
+| 28sobriete.c | C | link:../analyse/sobriete/28sobriete.c[Code]
+| 12sobriete.java | Java | link:../analyse/sobriete/12sobriete.java[Code]
+
+|===
