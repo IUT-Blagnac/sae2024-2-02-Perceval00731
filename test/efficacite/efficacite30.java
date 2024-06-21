@@ -1,7 +1,7 @@
 package iut.sae.algo;
 
 
-public class Algo{
+public class efficacite30{
     public static String RLE(String chaine){
         // Utilisation d'un StringBuilder (pour améliorer le temps d'execution) car l'object String ne concatène pas simplement plusieurs chaine.
         // Initialisation d'un compteur et d'un indice
@@ -32,45 +32,6 @@ public class Algo{
         return dBuilder.toString();
     }
 
-    public static String RLE(String chaine, int iteration) throws AlgoException{
-        if (iteration == 0){
-            return chaine;
-        }
-        else{
-            return RLE(RLE(chaine), iteration-1);
-        }
-        
-    }
-
-    public static String unRLE(String chaine) throws AlgoException{
-        if (chaine.length() == 0 || !Character.isDigit(chaine.charAt(0))) {
-            return chaine;
-        }
-        StringBuilder dBuilder = new StringBuilder();
-
-        // On parcourt la chaine de 2 en 2 (pour chaque couple compteur/caractère)
-        for (int i = 0; i < chaine.length(); i+=2) {
-            // On récupère le compteur devant le caractère...
-            int cptChar = Character.getNumericValue(chaine.charAt(i));
-            char carac = chaine.charAt(i+1);
-
-            // ... et on ajoute le caractère le nombre de fois nécessaire (=compteur)
-            for(int j = 0; j < cptChar; j++){
-                dBuilder.append(carac);
-            }
-        }
-    return dBuilder.toString();
-
-    }
-
-    public static String unRLE(String chaine, int iteration) throws AlgoException{
-        if (iteration == 0){
-            return chaine;
-        }
-        else {
-            return unRLE(unRLE(chaine), iteration-1);
-        }
-
-    }
+    
 }
 

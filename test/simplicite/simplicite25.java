@@ -1,7 +1,7 @@
 package iut.sae.algo;
 
 
-public class Simplicite {
+public class simplicite25 {
     public static String RLE(String in){
         
         // Cas chaîne vide
@@ -32,74 +32,6 @@ public class Simplicite {
         return resultat.toString(); // On retourne le résultat
     }
 
-    public static String RLE(String in, int iteration) throws AlgoException{
-        
-        // Cas chaîne vide
-        if(in == null || in.isEmpty()) {
-            return "";
-        }
-
-        if(iteration <= 0) { // Si l'itération est inférieure ou égale à 0
-            throw new AlgoException("L'itération doit être supérieure à 0"); // On lance une exception
-        }
-
-        String resultat = in; // Résultat
-
-        for(int i = 0; i < iteration; i++) { // Parcours des itérations
-            resultat = RLE(resultat); // On applique l'algorithme RLE
-        }
-
-        return resultat; // On retourne le résultat
-    }
-
-    public static String unRLE(String in) throws AlgoException{
-        
-        // Cas chaîne vide
-        if(in == null || in.isEmpty()) {
-            return "";
-        }
-
-        StringBuilder resultat = new StringBuilder(); // Résultat
-        
-        for(int i =0; i < in.length(); i++) { // Parcours de la chaîne
-            if(Character.isDigit(in.charAt(i))) { // Si le caractère i est un chiffre
-                int nbFois = Character.getNumericValue(in.charAt(i)); // On récupère le chiffre
-                if(nbFois >= 9){ // Si le chiffre est supérieur ou égal à 9
-                    for(int j = 0; j < 9; j++) { // On ajoute le caractère suivant au résultat 9 fois
-                        resultat.append(in.charAt(i+1)); 
-                    }
-                    for(int j = 0; j < nbFois-9; j++) { // On ajoute le caractère suivant au résultat (nbFois-9) fois
-                        resultat.append(in.charAt(i+1));
-                    }
-                } else { // Sinon si le chiffre est inférieur à 9
-                    for(int j = 0; j < nbFois; j++) { // On ajoute le caractère suivant au résultat nbFois fois
-                        resultat.append(in.charAt(i+1));
-                    }
-                }
-            } 
-        }
-
-        return resultat.toString(); // On retourne le résultat
-    }
-
-    public static String unRLE(String in, int iteration) throws AlgoException{
-
-        // Cas chaîne vide
-        if(in == null || in.isEmpty()) {
-            return "";
-        }
-
-        if(iteration <= 0) { // Si l'itération est inférieure ou égale à 0
-            throw new AlgoException("L'itération doit être supérieure à 0"); // On lance une exception
-        }
-
-        String resultat = in; // Résultat
-
-        for(int i = 0; i < iteration; i++) { // Parcours des itérations
-            resultat = unRLE(resultat); // On applique l'algorithme unRLE
-        }
-
-        return resultat; // On retourne le résultat
-    }
+    
 }
 

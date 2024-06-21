@@ -1,6 +1,6 @@
 package iut.sae.algo;
 
-public class CoutEnvironnemental{
+public class sobriete51{
     public static String RLE(String in) {
         if (in == null || in.isEmpty()) {
             return "";
@@ -25,31 +25,6 @@ public class CoutEnvironnemental{
     }
     
 
-    public static String RLE(String in, int iteration) throws AlgoException{
-        for (int i = 0; i < iteration; i++){
-            in = RLE(in);
-        }
-        return in;
-    }
-
-    public static String unRLE(String in) throws AlgoException{
-        StringBuilder decoded = new StringBuilder();
-
-        for (int i = 0; i < in.length(); i +=2){
-            int val = in.charAt(i) - '0';
-            char car = in.charAt(i+1);
-            for (int j = 0; j < val; j++){
-                decoded.append(car);
-            }
-        }
-        return decoded.toString();
-    }
-
-    public static String unRLE(String in, int iteration) throws AlgoException{
-        for (int i = 0 ; i < iteration; i ++){
-            in = unRLE(in);
-        }
-        return in;
-    }
+    
 }
 

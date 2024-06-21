@@ -1,10 +1,7 @@
+package iut.sae.algo;
+public class sobriete54 {
 
-public class Sobriete {
 
-    public static void main(String[] args) {
-        String message = "WWWWWWWWWBWWWWWWWWBBBWWWBWWWWWWW";
-        System.out.println(RLE(message));
-    }
 
     public static String RLE(String in) {
         // Permet d'éviter de créer un nouveau String à chaque concatenation
@@ -30,11 +27,4 @@ public class Sobriete {
         return compression.toString();
     }
 
-    public static String RLEIteration(String in, int iteration) {
-        String compression = in;
-        for (int i = 0; i < iteration; i++) {
-            compression = RLE(compression);
-        }
-        return compression;
-    }
 }
