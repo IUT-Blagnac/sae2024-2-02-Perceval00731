@@ -1,6 +1,6 @@
 package iut.sae.algo;
 
-public class efficacite {
+public class efficacite31 {
     
 
     public static String RLE(String in){
